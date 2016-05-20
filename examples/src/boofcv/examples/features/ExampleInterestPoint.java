@@ -90,7 +90,8 @@ public class ExampleInterestPoint {
 	}
 
 	public static void main( String args[] ) {
-		BufferedImage image = UtilImageIO.loadImage(UtilIO.pathExample("sunflowers.jpg"));
+//		BufferedImage image = UtilImageIO.loadImage(UtilIO.pathExample("sunflowers.jpg"));
+		BufferedImage image = UtilImageIO.loadImage(UtilIO.pathExample("pen01.jpg"));
 		detect(image, GrayF32.class);
 	}
 }

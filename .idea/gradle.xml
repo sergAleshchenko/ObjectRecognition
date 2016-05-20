@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/applications" />
+            <option value="$PROJECT_DIR$/demonstrations" />
+            <option value="$PROJECT_DIR$/examples" />
+            <option value="$PROJECT_DIR$/integration" />
+            <option value="$PROJECT_DIR$/integration/WebcamCapture" />
+            <option value="$PROJECT_DIR$/integration/applet" />
+            <option value="$PROJECT_DIR$/integration/jcodec" />
+            <option value="$PROJECT_DIR$/integration/xuggler" />
+            <option value="$PROJECT_DIR$/main" />
+            <option value="$PROJECT_DIR$/main/all" />
+            <option value="$PROJECT_DIR$/main/calibration" />
+            <option value="$PROJECT_DIR$/main/checks" />
+            <option value="$PROJECT_DIR$/main/feature" />
+            <option value="$PROJECT_DIR$/main/geo" />
+            <option value="$PROJECT_DIR$/main/io" />
+            <option value="$PROJECT_DIR$/main/ip" />
+            <option value="$PROJECT_DIR$/main/learning" />
+            <option value="$PROJECT_DIR$/main/recognition" />
+            <option value="$PROJECT_DIR$/main/sfm" />
+            <option value="$PROJECT_DIR$/main/visualize" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

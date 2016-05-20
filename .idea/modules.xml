@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BoofCV.iml" filepath="$PROJECT_DIR$/BoofCV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/all/BoofCV All.iml" filepath="$PROJECT_DIR$/main/all/BoofCV All.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration/applet/BoofCV Applet.iml" filepath="$PROJECT_DIR$/integration/applet/BoofCV Applet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/applications/BoofCV Applications.iml" filepath="$PROJECT_DIR$/applications/BoofCV Applications.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/calibration/BoofCV Calibration.iml" filepath="$PROJECT_DIR$/main/calibration/BoofCV Calibration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/checks/BoofCV Checks.iml" filepath="$PROJECT_DIR$/main/checks/BoofCV Checks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demonstrations/BoofCV Demonstrations.iml" filepath="$PROJECT_DIR$/demonstrations/BoofCV Demonstrations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples/BoofCV Examples.iml" filepath="$PROJECT_DIR$/examples/BoofCV Examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/feature/BoofCV Feature.iml" filepath="$PROJECT_DIR$/main/feature/BoofCV Feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/geo/BoofCV Geometric Vision.iml" filepath="$PROJECT_DIR$/main/geo/BoofCV Geometric Vision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/io/BoofCV IO.iml" filepath="$PROJECT_DIR$/main/io/BoofCV IO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/ip/BoofCV Image Processing.iml" filepath="$PROJECT_DIR$/main/ip/BoofCV Image Processing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration/jcodec/BoofCV JCodec.iml" filepath="$PROJECT_DIR$/integration/jcodec/BoofCV JCodec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/learning/BoofCV Learning.iml" filepath="$PROJECT_DIR$/main/learning/BoofCV Learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/recognition/BoofCV Recognition.iml" filepath="$PROJECT_DIR$/main/recognition/BoofCV Recognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/sfm/BoofCV SFM.iml" filepath="$PROJECT_DIR$/main/sfm/BoofCV SFM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/visualize/BoofCV Visualize.iml" filepath="$PROJECT_DIR$/main/visualize/BoofCV Visualize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration/WebcamCapture/BoofCV Webcam Capture.iml" filepath="$PROJECT_DIR$/integration/WebcamCapture/BoofCV Webcam Capture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration/xuggler/BoofCV Xuggler.iml" filepath="$PROJECT_DIR$/integration/xuggler/BoofCV Xuggler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration/integration.iml" filepath="$PROJECT_DIR$/integration/integration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
+    </modules>
+  </component>
+</project>

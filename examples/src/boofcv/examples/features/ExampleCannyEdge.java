@@ -45,7 +45,8 @@ import java.util.List;
 public class ExampleCannyEdge {
 
 	public static void main( String args[] ) {
-		BufferedImage image = UtilImageIO.loadImage(UtilIO.pathExample("simple_objects.jpg"));
+//		BufferedImage image = UtilImageIO.loadImage(UtilIO.pathExample("simple_objects.jpg"));
+		BufferedImage image = UtilImageIO.loadImage(UtilIO.pathExample("pen01.jpg"));
 
 		GrayU8 gray = ConvertBufferedImage.convertFrom(image,(GrayU8)null);
 		GrayU8 edgeImage = gray.createSameShape();
