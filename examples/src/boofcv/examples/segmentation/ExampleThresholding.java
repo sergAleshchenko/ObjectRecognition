@@ -104,36 +104,65 @@ public class ExampleThresholding {
 //		AffineTransformOp translateOperation = new AffineTransformOp(translation, AffineTransformOp.TYPE_BILINEAR);
 //		convertedFromFiltered = translateOperation.filter(convertedFromFiltered, null);
 
-		int pixelCount = 0;
 		int xBaseCenter = filtered.getWidth() / 2;
 		int yBaseCenter = filtered.getHeight() / 2;
 
 		int dx = xCenter - xBaseCenter;
 		int dy = yCenter - yBaseCenter;
 
+		int[][] startImage = new int[filtered.width][filtered.height];
+		int[][] finishImage = new int[filtered.width][filtered.height];
+
 		for (int i = 0; i < filtered.height; i++) {
 			for (int j = 0; j < filtered.width; j++) {
-				pixelCount++;
-
-				if (filtered.data[pixelCount - 1] == 1) {
-
-					if (j - dx  < 0 || i - dy  < 0)
-						continue;
-					if (j - dx >= 2 * xBaseCenter || i - dy >= 2 * yBaseCenter)
-						continue;
-
-					filtered.set(j, i, 0);
-					filtered.set(j - dx, i - dy, 1);
-				}
+				startImage[j][i] = filtered.get(j, i);
 			}
 		}
+
+		for (int i = 0; i < startImage[0].length; i++) {
+			for (int j = 0; j < startImage.length; j++) {
+				if (startImage[j][i] == 1)
+					finishImage[j - dx][i - dy] = 1;
+
+			}
+		}
+
+		for (int i = 0; i < finishImage[0].length; i++) {
+			for (int j = 0; j < finishImage.length; j++) {
+				filtered.set(j, i, finishImage[j][i]);
+
+			}
+		}
+
+
+
+
+
+//		for (int i = 0; i < filtered.height; i++) {
+//			for (int j = 0; j < filtered.width; j++) {
+//				pixelCount++;
+//
+//				if (filtered.data[pixelCount - 1] == 1) {
+//
+//					if (j - dx  < 0 || i - dy  < 0)
+//						continue;
+//					if (j - dx >= 2 * xBaseCenter || i - dy >= 2 * yBaseCenter)
+//						continue;
+//
+//					filtered.set(j, i, 0);
+//					filtered.set(j - dx, i - dy, 1);
+//				}
+//			}
+//		}
+
 
 
 
 		AffineTransform rotation = new AffineTransform();
 
 		double hipotenuse = Math.sqrt(Math.pow(xMaxRemovalPixel - xBaseCenter, 2) + Math.pow(yMaxRemovalPixel - yBaseCenter, 2));
-		double angleOfRotation = Math.acos((xMaxRemovalPixel - xBaseCenter) / hipotenuse);
+//		double angleOfRotation = Math.acos((xMaxRemovalPixel - xBaseCenter) / hipotenuse);
+		double angleOfRotation = Math.atan2(xMaxRemovalPixel - xBaseCenter, yMaxRemovalPixel - yBaseCenter);
 
 		double radians = angleOfRotation * Math.PI / 180;
 
@@ -146,12 +175,9 @@ public class ExampleThresholding {
 		convertedFromFiltered = rotationOperation.filter(convertedFromFiltered, null);
 
 
-
-
 		// Конвертируем обратно
 		GrayF32 newInput = ConvertBufferedImage.convertFromSingle(convertedFromFiltered, null, GrayF32.class);
 		GrayU8 newBinary = new GrayU8(newInput.width,newInput.height);
-
 
 
 		// Отображение полученного изображения
@@ -211,7 +237,7 @@ public class ExampleThresholding {
 	public static void main(String[] args) {
 		// example in which global thresholding works best
 
-		threshold(UtilIO.pathExample("image_01.jpg"));
+		threshold(UtilIO.pathExample("image_03.jpg"));
 
 
 
