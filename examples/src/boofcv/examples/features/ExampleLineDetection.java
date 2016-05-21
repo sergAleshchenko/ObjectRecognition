@@ -46,6 +46,7 @@ import java.util.List;
  */
 public class ExampleLineDetection {
 
+
 	// adjusts edge threshold for identifying pixels belonging to a line
 	private static final float edgeThreshold = 25;
 	// adjust the maximum number of found lines in the image

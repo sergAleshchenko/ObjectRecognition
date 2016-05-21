@@ -75,13 +75,44 @@
       <file leaf-file-name="ExampleThresholding.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleThresholding.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53651685">
-              <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.16021362">
+              <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
               <folding>
-                <element signature="e#0#8043#0" expanded="true" />
+                <element signature="e#0#10028#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <marker date="1463756130850" expanded="true" signature="4940:5341" placeholder="..." />
-                <marker date="1463756130850" expanded="true" signature="5858:6149" placeholder="..." />
+                <marker date="1463765737662" expanded="true" signature="5149:5444" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilImageIO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/io/src/boofcv/io/image/UtilImageIO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="146" column="64" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConvertBufferedImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/io/src/boofcv/io/image/ConvertBufferedImage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="290" column="0" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageLinePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main/visualize/src/boofcv/gui/feature/ImageLinePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/examples/src/boofcv/examples/recognition/ExampleClassifySceneKnn.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="251" column="40" selection-start-line="251" selection-start-column="40" selection-end-line="251" selection-end-column="40" />
+              <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -143,32 +174,6 @@
             <state vertical-scroll-proportion="0.0">
               <caret line="213" column="11" selection-start-line="213" selection-start-column="11" selection-end-line="213" selection-end-column="11" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputSanityCheck.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/ip/src/boofcv/alg/InputSanityCheck.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#5685#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DistortSupport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/ip/src/boofcv/alg/distort/impl/DistortSupport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#3985#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -3632,6 +3637,7 @@
         <option value="$PROJECT_DIR$/examples/src/boofcv/examples/features/ExampleInterestPoint.java" />
         <option value="$PROJECT_DIR$/examples/src/boofcv/examples/recognition/ExampleColorHistogramLookup.java" />
         <option value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/awt/geom/AffineTransform.class" />
+        <option value="$PROJECT_DIR$/examples/src/boofcv/examples/features/ExampleLineDetection.java" />
         <option value="$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleThresholding.java" />
       </list>
     </option>
@@ -3652,9 +3658,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="46" />
-    <option name="y" value="-4" />
-    <option name="width" value="1874" />
-    <option name="height" value="1084" />
+    <option name="y" value="21" />
+    <option name="width" value="1752" />
+    <option name="height" value="848" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -3679,7 +3685,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -3959,6 +3965,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="geometry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoofCV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BoofCV" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="features" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -3991,14 +4023,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="DistortImageOps&#9;PSI&#9;JAVA://boofcv.alg.distort.DistortImageOps&#10;DistortSupport&#9;PSI&#9;JAVA://boofcv.alg.distort.impl.DistortSupport&#10;ExamplePlanarImages&#9;FILE&#9;file:///home/sergey/Downloads/Java Projects/BoofCV/examples/src/boofcv/examples/imageprocessing/ExamplePlanarImages.java&#10;FastCornerIntensity&#9;PSI&#9;JAVA://boofcv.alg.feature.detect.intensity.FastCornerIntensity&#10;HistogramFeatureOps&#9;PSI&#9;JAVA://boofcv.alg.feature.color.HistogramFeatureOps&#10;TestHistogramFeatureOps&#9;PSI&#9;JAVA://boofcv.alg.feature.color.TestHistogramFeatureOps&#10;ExampleColorHistogramLookup&#9;PSI&#9;JAVA://boofcv.examples.recognition.ExampleColorHistogramLookup&#10;ExampleImageEnhancement&#9;PSI&#9;JAVA://boofcv.examples.enhance.ExampleImageEnhancement&#10;Thre&#9;FILE&#9;file:///home/sergey/Downloads/Java Projects/BoofCV/examples/src/boofcv/examples/segmentation/ExampleThresholding.java&#10;Blur&#9;PSI&#9;JAVA://boofcv.abst.filter.blur.BlurStorageFilter&#10;Superpixels&#9;PSI&#9;JAVA://boofcv.examples.segmentation.ExampleSegmentSuperpixels&#10;Webcam&#9;PSI&#9;JAVA://boofcv.examples.ExampleWebcamGradient" />
+    <property name="SearchEverywhereHistoryKey" value="ExampleLineDetection&#9;PSI&#9;JAVA://boofcv.examples.features.ExampleLineDetection&#10;Hough&#9;PSI&#9;JAVA://boofcv.alg.feature.detect.lines.BenchmarkDetectLines.HoughPolar&#10;DistortImageOps&#9;PSI&#9;JAVA://boofcv.alg.distort.DistortImageOps&#10;DistortSupport&#9;PSI&#9;JAVA://boofcv.alg.distort.impl.DistortSupport&#10;ExamplePlanarImages&#9;FILE&#9;file:///home/sergey/Downloads/Java Projects/BoofCV/examples/src/boofcv/examples/imageprocessing/ExamplePlanarImages.java&#10;FastCornerIntensity&#9;PSI&#9;JAVA://boofcv.alg.feature.detect.intensity.FastCornerIntensity&#10;HistogramFeatureOps&#9;PSI&#9;JAVA://boofcv.alg.feature.color.HistogramFeatureOps&#10;TestHistogramFeatureOps&#9;PSI&#9;JAVA://boofcv.alg.feature.color.TestHistogramFeatureOps&#10;ExampleColorHistogramLookup&#9;PSI&#9;JAVA://boofcv.examples.recognition.ExampleColorHistogramLookup&#10;ExampleImageEnhancement&#9;PSI&#9;JAVA://boofcv.examples.enhance.ExampleImageEnhancement&#10;Thre&#9;FILE&#9;file:///home/sergey/Downloads/Java Projects/BoofCV/examples/src/boofcv/examples/segmentation/ExampleThresholding.java&#10;Blur&#9;PSI&#9;JAVA://boofcv.abst.filter.blur.BlurStorageFilter&#10;Superpixels&#9;PSI&#9;JAVA://boofcv.examples.segmentation.ExampleSegmentSuperpixels&#10;Webcam&#9;PSI&#9;JAVA://boofcv.examples.ExampleWebcamGradient" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="project.structure.last.edited" value="Project" />
@@ -4017,46 +4049,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="boofcv.examples.segmentation.ExampleThresholding" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="BoofCV Examples" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ExampleImageEnhancement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="boofcv.examples.enhance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="boofcv.examples.enhance.ExampleImageEnhancement" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="BoofCV Examples" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="ExamplePlanarImages" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="boofcv.examples.imageprocessing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="boofcv.examples.imageprocessing.ExamplePlanarImages" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -4097,6 +4089,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="boofcv.examples.recognition.ExampleClassifySceneKnn" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BoofCV Examples" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BenchmarkDetectLines" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="boofcv.alg.feature.detect.lines.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="boofcv.alg.feature.detect.lines.BenchmarkDetectLines" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="BoofCV Feature" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ExampleLineDetection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="boofcv.examples.features.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="boofcv.examples.features.ExampleLineDetection" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -4421,18 +4453,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ExampleThresholding" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ExampleImageEnhancement" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ExamplePlanarImages" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ExampleCannyEdge" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ExampleClassifySceneKnn" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ExampleCannyEdge" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ExampleClassifySceneKnn" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BenchmarkDetectLines" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ExampleLineDetection" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.ExampleThresholding" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ExampleClassifySceneKnn" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ExampleCannyEdge" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ExampleImageEnhancement" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ExamplePlanarImages" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ExampleLineDetection" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BenchmarkDetectLines" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ExampleClassifySceneKnn" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ExampleCannyEdge" />
       </list>
     </recent_temporary>
   </component>
@@ -4456,12 +4488,13 @@
       <workItem from="1463570592796" duration="26069000" />
       <workItem from="1463658031180" duration="19485000" />
       <workItem from="1463680736874" duration="2660000" />
-      <workItem from="1463747052693" duration="8480000" />
+      <workItem from="1463747052693" duration="19709000" />
+      <workItem from="1463850799551" duration="140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65509000" />
+    <option name="totallyTimeSpent" value="76878000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -4473,36 +4506,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="-4" width="1874" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="46" y="21" width="1752" height="848" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4878788" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.262035" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25050506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26201642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2962963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4878788" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -4528,27 +4561,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleThresholding.java</url>
-          <line>191</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleThresholding.java</url>
-          <line>172</line>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleThresholding.java</url>
-          <line>77</line>
+          <line>89</line>
           <properties />
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleThresholding.java</url>
-          <line>140</line>
-          <properties />
-          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="21" />
@@ -4567,54 +4594,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/integration/xuggler/src/boofcv/io/wrapper/xuggler/XugglerSimplified.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25">
-          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.5897436">
-            <caret line="106" column="20" selection-start-line="106" selection-start-column="20" selection-end-line="106" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleWatershedWithSeeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/ip/src/boofcv/alg/filter/blur/BlurImageOps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.025316456">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/ip/src/boofcv/abst/filter/blur/BlurStorageFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32911393">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/integration/WebcamCapture/examples/boofcv/examples/ExampleWebcamGradient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/integration/WebcamCapture/examples/boofcv/examples/ExampleTrackingKlt.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -4847,14 +4826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/io/src/boofcv/io/image/ConvertBufferedImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="308" column="25" selection-start-line="308" selection-start-column="25" selection-end-line="308" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/ip/src/boofcv/struct/image/ImageBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.4715447">
@@ -4867,10 +4838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#3985#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4885,10 +4852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="4" selection-start-line="69" selection-start-column="4" selection-end-line="76" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#5685#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4932,23 +4895,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/feature/benchmark/boofcv/alg/feature/detect/lines/BenchmarkDetectLines.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/feature/src/boofcv/factory/feature/detect/line/FactoryDetectLineAlgs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57983196">
+          <caret line="159" column="30" selection-start-line="159" selection-start-column="30" selection-end-line="159" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/visualize/src/boofcv/gui/feature/ImageLinePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/io/src/boofcv/io/image/ConvertBufferedImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="290" column="0" selection-start-line="290" selection-start-column="0" selection-end-line="290" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/io/src/boofcv/io/image/UtilImageIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="146" column="64" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/src/boofcv/examples/recognition/ExampleClassifySceneKnn.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="251" column="40" selection-start-line="251" selection-start-column="40" selection-end-line="251" selection-end-column="40" />
+          <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/feature/src/boofcv/abst/feature/detect/line/DetectLineSegmentsGridRansac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24717692">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/src/boofcv/examples/features/ExampleLineDetection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49811795">
+          <caret line="116" column="42" selection-start-line="116" selection-start-column="42" selection-end-line="116" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/src/boofcv/examples/segmentation/ExampleThresholding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53651685">
-          <caret line="179" column="23" selection-start-line="179" selection-start-column="23" selection-end-line="179" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.16021362">
+          <caret line="204" column="0" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
           <folding>
-            <element signature="e#0#8043#0" expanded="true" />
+            <element signature="e#0#10028#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <marker date="1463756130850" expanded="true" signature="4940:5341" placeholder="..." />
-            <marker date="1463756130850" expanded="true" signature="5858:6149" placeholder="..." />
+            <marker date="1463765737662" expanded="true" signature="5149:5444" placeholder="..." />
           </folding>
         </state>
       </provider>
