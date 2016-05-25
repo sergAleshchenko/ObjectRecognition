@@ -31,68 +31,55 @@ import boofcv.io.UtilIO;
 import boofcv.io.image.ConvertBufferedImage;
 import boofcv.io.image.UtilImageIO;
 import boofcv.struct.image.GrayF32;
-import boofcv.struct.image.GrayS16;
 import boofcv.struct.image.GrayU8;
 import boofcv.struct.image.ImageGray;
 import georegression.struct.line.LineParametric2D_F32;
 
 import java.awt.*;
+import java.awt.geom.AffineTransform;
+import java.awt.image.AffineTransformOp;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Demonstration of different techniques for automatic thresholding an image to create a binary image.  The binary
- * image can then be used for shape analysis and other applications.  Global methods apply the same threshold
- * to the entire image.  Local methods compute a local threshold around each pixel and can handle uneven
- * lighting, but produce noisy results in regions with uniform lighting.
- *
- * @see boofcv.examples.imageprocessing.ExampleBinaryOps
- *
- * @author Peter Abeles
- */
+
 public class ExampleThresholding {
-	static List<Integer> xOfPen = new ArrayList<>();			// Координаты пикселей ручки
-	static List<Integer> yOfPen = new ArrayList<>();
+	private List<Integer> xOfPen = new ArrayList<>();			// Координаты пикселей ручки
+	private  List<Integer> yOfPen = new ArrayList<>();
 
-	static int xCenter = 0;										// Координаты центрального пикселя ручки
-	static int yCenter = 0;
+	private  int xCenter = 0;										// Координаты центрального пикселя ручки
+	private int yCenter = 0;
 
-	static int xMaxRemovalPixel = 0;							// Координаты самого удаленного от центра пикселя
-	static int yMaxRemovalPixel = 0;
+	private int xMaxRemovalPixel = 0;							// Координаты самого удаленного от центра пикселя
+	private int yMaxRemovalPixel = 0;
 
-	static int xSum = 0;										// Суммы координат (для поиска центра)
-	static int ySum = 0;
+	private int xSum = 0;										// Суммы координат (для поиска центра)
+	private int ySum = 0;
 
-	static double maxDistance = 0;								// Расстояние до максимально удаленного пикселя
+	private double maxDistance = 0;								// Расстояние до максимально удаленного пикселя
 
-	static int xBaseCenter;										// Центр картинки
-	static int yBaseCenter;
+	private int xBaseCenter;										// Центр картинки
+	private int yBaseCenter;
 
-	static final float edgeThreshold = 25;
-	static final int maxLines = 10;
-	static ListDisplayPanel listPanel = new ListDisplayPanel();
+	private final float edgeThreshold = 25;
+	private final int maxLines = 10;
+	private ListDisplayPanel listPanel = new ListDisplayPanel();
 
 
 
-	public static void threshold( String imageName )  {
+	public void threshold( String imageName )  {
 		BufferedImage image = UtilImageIO.loadImage(imageName);
-		// Display multiple images in the same window
 		ListDisplayPanel gui = new ListDisplayPanel();
 
-		// convert into a usable format
+		ResizeImage resizeImage = new ResizeImage();
+
+		image = resizeImage.resizing(image);
+
 		GrayF32 input = ConvertBufferedImage.convertFromSingle(image, null, GrayF32.class);
 		GrayU8 binary = new GrayU8(input.width,input.height);
 
-//		GThresholdImageOps.threshold(input, binary, ImageStatistics.mean(input), true);
-//		gui.addImage(VisualizeBinaryData.renderBinary(binary, false, null),"Global: Mean");
-
 		GThresholdImageOps.threshold(input, binary, GThresholdImageOps.computeOtsu(input, 0, 255), true);
 		gui.addImage(VisualizeBinaryData.renderBinary(binary, false, null),"Global: Otsu");
-
-//		GThresholdImageOps.threshold(input, binary, GThresholdImageOps.computeEntropy(input, 0, 255), true);
-//		gui.addImage(VisualizeBinaryData.renderBinary(binary, false, null),"Global: Entropy");
-
 		gui.addImage(ConvertBufferedImage.convertTo(input,null),"Input Image");
 
 
@@ -103,72 +90,75 @@ public class ExampleThresholding {
 		// Ищем центр
 		findCenterOfTheObject(filtered);
 
-		// Ищем самый удаленный от центра пиксель
-		findTheMostRemovedPixelFromCenter();
-
-		filtered.set(xCenter, yCenter, 0);
-		filtered.set(xMaxRemovalPixel, yMaxRemovalPixel, 0);
-
+		// Центр картинки
 		xBaseCenter = filtered.getWidth() / 2;
 		yBaseCenter = filtered.getHeight() / 2;
 
-
 		// Сдвиг изображения в центр картинки
 		GrayU8 transferedImage = transferImage(filtered);
-
-		BufferedImage convertedFromTransferedImage = ConvertBufferedImage.convertTo(transferedImage, null);
-
+		findCenterOfTheObject(transferedImage);
 
 
-		UtilImageIO.saveImage(convertedFromTransferedImage, "temp.jpg");
+		// Поворачивает объект
+		// Обновляем координаты ручки после сдвига
+		updateObjectCoordinates(transferedImage);
+		// Ищем самый удаленный от центра пиксель
+		findTheMostRemovedPixelFromCenter();
 
-//		GrayU8 newBinary = new GrayU8(newInput.width,newInput.height);
+		BufferedImage convertedFromTransferredImage = ConvertBufferedImage.convertTo(transferedImage, null);
+		AffineTransform rotation = new AffineTransform();
+		double angleOfRotation;
 
+		if (yMaxRemovalPixel <= yBaseCenter) {
+			angleOfRotation = Math.atan2(Math.abs(xMaxRemovalPixel - xBaseCenter), Math.abs(yMaxRemovalPixel - yBaseCenter));
+		} else {
+			angleOfRotation = Math.PI - Math.atan2(Math.abs(xMaxRemovalPixel - xBaseCenter), Math.abs(yMaxRemovalPixel - yBaseCenter));
+		}
 
+		if (xMaxRemovalPixel > xBaseCenter) {
+			angleOfRotation *= -1;
+		}
 
+		double radians = angleOfRotation;
 
-//		AffineTransform rotation = new AffineTransform();
-//
-//		double hipotenuse = Math.sqrt(Math.pow(xMaxRemovalPixel - xBaseCenter, 2) + Math.pow(yMaxRemovalPixel - yBaseCenter, 2));
-//		double angleOfRotation = Math.atan2(xMaxRemovalPixel - xBaseCenter, yMaxRemovalPixel - yBaseCenter);
-//		double radians = angleOfRotation * Math.PI / 180;
-//		BufferedImage convertedFromFiltered = ConvertBufferedImage.convertTo(filtered, null);
-//
-//		rotation.rotate(radians, convertedFromFiltered.getWidth() / 2, convertedFromFiltered.getHeight() / 2);
-//		AffineTransformOp rotationOperation = new AffineTransformOp(rotation, AffineTransformOp.TYPE_BILINEAR);
-//		convertedFromFiltered = rotationOperation.filter(convertedFromFiltered, null);
-//
-//		// Конвертируем обратно
-//		GrayF32 newInput = ConvertBufferedImage.convertFromSingle(convertedFromFiltered, null, GrayF32.class);
-//		GrayU8 newBinary = new GrayU8(newInput.width,newInput.height);
-//
-//		// Отображение полученного изображения
-//		GThresholdImageOps.threshold(newInput, newBinary, GThresholdImageOps.computeOtsu(newInput, 0, 255), true);
-//		gui.addImage(VisualizeBinaryData.renderBinary(newBinary, false, null),"newFiletered");
+		rotation.rotate(radians, convertedFromTransferredImage.getWidth() / 2, convertedFromTransferredImage.getHeight() / 2);
+		AffineTransformOp rotationOperation = new AffineTransformOp(rotation, AffineTransformOp.TYPE_BILINEAR);
+		convertedFromTransferredImage = rotationOperation.filter(convertedFromTransferredImage, null);
 
-
-//		GThresholdImageOps.threshold(input, binary, GThresholdImageOps.computeOtsu(input, 0, 255), true);
-//		gui.addImage(VisualizeBinaryData.renderBinary(detectedLines, false, null),"WithLines");
-
-
-
-		BufferedImage convertedFromFiltered = ConvertBufferedImage.convertTo(filtered, null);
-		detectLines(convertedFromFiltered, GrayU8.class, GrayS16.class);
-
+		GrayF32 newInput = ConvertBufferedImage.convertFromSingle(convertedFromTransferredImage, null, GrayF32.class);
+		GrayU8 newBinary = new GrayU8(newInput.width,newInput.height);
 
 //		GThresholdImageOps.threshold(input, binary, GThresholdImageOps.computeOtsu(input, 0, 255), true);
 //		gui.addImage(VisualizeBinaryData.renderBinary(filtered, false, null),"Filetered");
 
-
 		GThresholdImageOps.threshold(input, binary, GThresholdImageOps.computeOtsu(input, 0, 255), true);
 		gui.addImage(VisualizeBinaryData.renderBinary(transferedImage, false, null),"Transfered");
+
+		// Отображение полученного изображения
+		GThresholdImageOps.threshold(newInput, newBinary, GThresholdImageOps.computeOtsu(newInput, 0, 255), true);
+		gui.addImage(VisualizeBinaryData.renderBinary(newBinary, false, null),"TransferedAndRotated");
+
 
 		String fileName =  imageName.substring(imageName.lastIndexOf('/')+1);
 		ShowImages.showWindow(gui,fileName);
 	}
 
+	public void updateObjectCoordinates(GrayU8 image) {
+		xOfPen.clear();
+		yOfPen.clear();
 
-	public static<T extends ImageGray, D extends ImageGray>
+		for (int i = 0; i < image.width; i++) {
+			for (int j = 0; j < image.height; j++) {
+				if (image.get(i, j) == 1) {
+					xOfPen.add(i);
+					yOfPen.add(j);
+				}
+			}
+		}
+	}
+
+
+	public <T extends ImageGray, D extends ImageGray>
 	void detectLines( BufferedImage image ,
 					  Class<T> imageType ,
 					  Class<D> derivType ) {
@@ -196,10 +186,7 @@ public class ExampleThresholding {
 	}
 
 
-
-
-
-	public static GrayU8 transferImage(GrayU8 filtered) {
+	public GrayU8 transferImage(GrayU8 filtered) {
 		int dx = xCenter - xBaseCenter;
 		int dy = yCenter - yBaseCenter;
 
@@ -231,8 +218,7 @@ public class ExampleThresholding {
 	}
 
 
-
-	public static void findTheMostRemovedPixelFromCenter() {
+	public void findTheMostRemovedPixelFromCenter() {
 
 		for (int i = 0; i < xOfPen.size(); i++) {
 			double distance = Math.sqrt(Math.pow((xCenter - xOfPen.get(i)), 2) + Math.pow((yCenter - yOfPen.get(i)), 2));
@@ -249,10 +235,13 @@ public class ExampleThresholding {
 				yMaxRemovalPixel = yOfPen.get(i);
 			}
 		}
+
+
 	}
 
 
-	public static void findCenterOfTheObject(GrayU8 filtered) {
+
+	public void findCenterOfTheObject(GrayU8 filtered) {
 
 		for (int i = 0; i < filtered.width; i++) {
 			for (int j = 0; j < filtered.height; j++) {
@@ -273,18 +262,8 @@ public class ExampleThresholding {
 
 	}
 
-	public static void main(String[] args) {
-
-		BufferedImage input = UtilImageIO.loadImage(UtilIO.pathExample("image_01.jpg"));
-
-		detectLines(input, GrayU8.class, GrayS16.class);
-
-		ShowImages.showWindow(listPanel, "Detected Lines", true);
-
-
-		threshold(UtilIO.pathExample("image_03.jpg"));
-
-
-
+	public void doExecute(String fileName) {
+		threshold(UtilIO.pathExample(fileName));
 	}
+
 }
